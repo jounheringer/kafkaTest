@@ -1,0 +1,21 @@
+[versions]
+spring-boot = "3.4.4"
+spring-dependency = "1.1.7"
+kafka = "4.0.0"
+spring-kafka = "3.3.3"
+lombok = "1.18.36"
+junit = "1.13.0-M2"
+
+[libraries]
+spring-boot-web = { module = "org.springframework.boot:spring-boot-starter-web", version.ref = "spring-boot"}
+kafka = { module = "org.apache.kafka:kafka-streams", version.ref = "kafka"}
+spring-kafka = { module = "org.springframework.kafka:spring-kafka", version.ref = "spring-kafka" }
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+spring-docker = { module = "org.springframework.boot:spring-boot-docker-compose", version.ref = "spring-boot"}
+spring-boot-test = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "spring-boot"}
+kafka-test = { module = "org.springframework.kafka:spring-kafka-test", version.ref = "spring-kafka"}
+junit = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junit" }
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-dependency = { id = "io.spring.dependency-management", version.ref = "spring-dependency" }
